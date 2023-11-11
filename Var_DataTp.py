@@ -1,4 +1,5 @@
-#import math
+import math
+
 def myFunc1():
 
     n1 = int(input("Enter first num: "))
@@ -40,3 +41,28 @@ def myFunc6():
     n = int(input("Enter num: "))
     print(n % 10)
 #myFunc6()
+def Circle():
+    r = float(input("R = "))
+    p = round(math.pi, 2)
+    S = p * pow(r, 2)
+    C = 2 * p * r
+    print(f"{S:.3f}")
+    print(f"{C:.3f}")
+#Circle()
+
+def mat1():
+    a = int(input("a = "))
+    b = int(input("b = "))
+
+    print(f"({a} + {b}) * ({b} + {a}) = {(a+b)*(b+a)}")
+#at1()
+
+def HightToCm():
+    feet = int(input("Feet: "))
+    inc = int(input("Inches: "))
+
+    feet *= 30.48
+    inc *= 2.54
+    Cm = round(feet + inc)
+    print(f"Your height is: {Cm} cm.")
+HightToCm()
